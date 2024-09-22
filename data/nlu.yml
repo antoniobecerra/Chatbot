@@ -1,0 +1,225 @@
+version: "3.1"
+
+nlu:
+- intent: saludo
+  examples: |
+    - hola
+    - buenos días
+    - buenas tardes
+    - buenas noches
+    - hey
+    - buen día
+    - saludos
+    - hola, necesito ayuda
+    - hola, quisiera realizar una consulta
+
+- intent: despedida
+  examples: |
+    - adiós
+    - hasta luego
+    - nos vemos
+    - cuídate
+    - chao
+    - gracias y adiós
+    - hasta la próxima
+    - que tenga un buen día
+    - hasta pronto
+    - adiós, Servosis
+    - saludos y hasta luego
+    - gracias por su atención
+    - eso es todo, gracias
+
+
+- intent: afirmacion
+  examples: |
+    - sí
+    - correcto
+    - exactamente
+    - por supuesto
+    - eso es
+    - ciertamente
+    - justamente
+    - seguro
+    - sin duda
+    - de acuerdo
+    - completamente
+    - obvio
+    - tal cual
+    - está bien
+    - eso mismo
+    - efectivamente
+
+- intent: negacion
+  examples: |
+    - no
+    - para nada
+    - en absoluto
+    - no es correcto
+    - no, gracias
+    - negativo
+    - de ninguna manera
+    - no lo creo
+    - no es así
+    - no, está mal
+    - no, eso no
+    - lo dudo
+    - no estoy de acuerdo
+    - ni hablar
+    - no quiero
+    - no, en absoluto
+    - no, no es eso
+    - no lo necesito
+    - no es lo que busco
+    - me temo que no
+
+############################################################
+############################################################
+############### Quienes somos ##############################
+############################################################
+############################################################
+# - intent: informacion_empresa
+#   examples: |
+#     - ¿Quién fundó la [empresa](empresa)?
+#     - ¿Dónde está [ubicada](ubicacion) [Servosis](empresa)?
+#     - ¿Qué tipo de [empresa](empresa) es [Servosis](empresa)?
+#     - ¿Cuál es la [historia](historia) de [Servosis](empresa)?
+#     - ¿Qué [diferencia](diferenciador) a [Servosis](empresa) de otras empresas del sector?
+#     - ¿Dónde puedo encontrar más información sobre [Servosis](empresa)?
+#     - ¿Qué [tamaño](tamano) tiene [Servosis](empresa)?
+#     - ¿Qué [logros](logros) importantes ha tenido [Servosis](empresa)?
+
+- intent: sobre_nosotros
+  examples: |
+    - ¿Qué es Servosis?
+    - ¿Me puede contar sobre la empresa Servosis?
+    - ¿Qué hace Servosis?
+    - ¿Qué es lo que hace Servosis?
+    - ¿A qué se dedica Servosis?
+    - ¿Quiénes sois?
+
+- intent: fundador_empresa
+  examples: |
+    - ¿Quién fundó la empresa?
+    - ¿Quién es el fundador de Servosis?
+    - ¿Quién creó Servosis?
+    - ¿Quiénes crearon la empresa Servosis?
+
+- intent: fecha_fundacion_empresa
+  examples: |
+    - ¿Cuándo se creó Servosis?
+    - ¿En qué año se fundó Servosis?
+    - ¿Cuándo se fundó la empresa?
+    - ¿Cuándo crearon la empresa?
+    - ¿En qué momento se creó Servosis?
+
+- intent: nuestro_equipo
+  examples: |
+    - ¿Quiénes forman el equipo de Servosis?
+    - ¿Cómo es el equipo de Servosis?
+    - Háblame del equipo de Servosis
+    - ¿Con qué tipo de equipo cuenta Servosis?
+    - ¿Qué tipo de profesionales tiene Servosis?
+    - ¿Cómo está compuesto el equipo de Servosis?
+    - ¿Quiénes forman parte del equipo de Servosis?
+    - ¿Quiénes trabajan en Servosis?
+    - ¿Cómo está organizado el equipo de Servosis?
+    - ¿Cómo se describiría al equipo de Servosis?
+
+- intent: nuestras_instalaciones
+  examples: |
+    - ¿Cómo son las instalaciones de Servosis?
+    - Háblame de las instalaciones de Servosis
+    - ¿Qué tipo de instalaciones tiene Servosis?
+    - ¿Dónde están ubicadas las instalaciones de Servosis?
+    - ¿Cómo es la infraestructura de Servosis?
+    - ¿Qué recursos tienen en las instalaciones de Servosis?
+    - ¿Cómo son los procesos de fabricación en las instalaciones de Servosis?
+    - ¿Qué tipo de maquinaria tienen en Servosis?
+    - ¿Con qué tipo de instalaciones cuenta Servosis?
+    - ¿Cómo están equipadas las instalaciones de Servosis?
+
+- intent: politica_calidad
+  examples: |
+    - ¿Cuál es la política de calidad de Servosis?
+    - Háblame de la política de calidad de Servosis
+    - ¿Cómo gestiona Servosis su política de calidad?
+    - ¿Cuál es el enfoque de Servosis hacia la calidad?
+    - ¿Cómo asegura Servosis la calidad de sus productos?
+    - ¿Tienen [certificado](certificado) ISO en Servosis?
+    - ¿Cumplen con la normativa [ISO 9001](certificado)?
+    - ¿Puedo ver el [certificado](certificado) ISO de Servosis?
+    - ¿Me puedes enviar el [certificado ISO](certificado)?
+    - ¿Tiene Servosis una certificación [ISO 9001](certificado)?
+    - ¿Cómo garantiza Servosis la satisfacción del cliente?
+
+
+- intent: videos_equipamiento
+  examples: |
+    - ¿Tenéis algún vídeo que muestre el funcionamiento de vuestras máquinas?
+    - ¿Podríais proporcionar vídeos que muestren cómo funcionan vuestras máquinas?
+    - Estoy buscando demostraciones en vídeo de vuestro equipo en acción. ¿Dónde puedo encontrarlos?
+    - ¿Hay algún vídeo disponible que muestre el uso de vuestras máquinas?
+    - Me gustaría ver vídeos de vuestros equipos operando. ¿Tenéis alguno disponible?
+    - ¿Tenéis algún vídeo que ilustre las capacidades de vuestras máquinas?
+    - Estoy interesado en ver cómo operan vuestros equipos. ¿Podríais mostrarme algunos vídeos?
+    - ¿Dónde puedo encontrar vídeos que demuestren el rendimiento de vuestras máquinas?
+    - ¿Podríais proporcionarme vídeos de demostración de vuestros equipos en funcionamiento?
+    - ¿Existen vídeos disponibles que muestren las características de vuestras máquinas en uso?
+
+- intent: seleccionar_video
+  examples: |
+    - [Marcadora manual](video_seleccionado)
+    - [Marcadora automática](video_seleccionado)
+    - [Máquina de corte y recalcado](video_seleccionado)
+    - [Ensayo de impacto](video_seleccionado)
+    - [Prensa para ensayos de corte y recalcado](video_seleccionado)
+    - [Ensayo cíclico tracción-compresión sobre barra](video_seleccionado)
+
+
+- intent: servicios_ofrecidos
+  examples: |
+    - ¿Qué servicios ofrecéis?
+    - ¿Qué servicios ofrece Servosis?
+    - Dime más sobre los servicios que ofrece Servosis
+    - ¿Qué incluye el catálogo de servicios de Servosis?
+    - ¿Qué tipo de servicios ofrecéis?
+    - ¿Cuáles son los servicios que proporcionáis?
+
+- intent: bot
+  examples: |
+    - ¿Hablo con un bot o con una persona?
+    - ¿Es usted un humano?
+    - ¿Con quién hablo?
+    - ¿Estoy hablando con una persona?
+    - ¿Estoy hablando con una máquina?
+
+
+- intent: contacto
+  examples: |
+    - ¿Cómo puedo contactar con la empresa?
+    - ¿Cómo me comunico con Servosis?
+    - ¿Cómo puedo consultar dudas?
+    - Tengo dudas sobre una máquina, ¿con quién puedo hablar?
+    - Me han surgido dudas acerca de los servicios.
+    - Tengo dudas sobre una máquina en particular.
+    - ¿Con quién puedo hablar para resolver dudas?
+
+- intent: clientes
+  examples: |
+  - ¿Qué instituciones confían en Servosis?
+  - ¿Qué clientes tiene Servosis?
+  - Dime qué tipo de clientes tiene la empresa.
+  - ¿Quiénes confían en Servosis?
+  - ¿Cuáles son los principales clientes de Servosis?
+  - ¿Qué empresas son clientes de Servosis?
+  - ¿Quiénes colaboran con Servosis?
+  - ¿Con qué clientes trabaja Servosis?
+  - ¿Qué empresas han trabajado con Servosis?
+  - ¿Servosis tiene casos de éxito?
+  - ¿Cuáles son los principales_clientes de Servosis?
+  - ¿Dónde puedo ver los clientes de Servosis?
+  - ¿Cuáles son los clientes más importantes de Servosis?
+
+- intent: productos
+  examples: |
+    

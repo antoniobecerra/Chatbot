@@ -1,0 +1,148 @@
+version: "3.1"
+
+intents:
+  - saludo
+  - despedida
+  - afirmacion
+  - negacion
+  - sobre_nosotros
+  - fundador_empresa
+  - fecha_fundacion_empresa
+  - nuestro_equipo
+  - nuestras_instalaciones
+  - politica_calidad
+  - bot
+  - videos_equipamiento
+  - seleccionar_video
+  - servicios_ofrecidos
+  - contacto
+  - clientes
+
+entities:
+  - video_seleccionado
+  # - ubicacion # Para identificar preguntas sobre la ubicación de la empresa.
+  # - fundador # Para identificar preguntas sobre el fundador de la empresa.
+  # - historia # Para identificar preguntas sobre la historia de la empresa.
+  # - diferenciador # Para identificar preguntas sobre qué diferencia a la empresa de otras.
+  # - tamano # Para identificar preguntas sobre el tamaño de la empresa.
+  # - logros # Para identificar preguntas sobre los logros de la empresa.
+  # - servicio # Para identificar preguntas sobre los servicios ofrecidos por la empresa.
+  # - empresa          # Identifica el nombre de la empresa, en este caso, Servosis
+  # - catalogo         # Relacionado con el catálogo o lista de servicios
+  # - consultoria      # Servicios de consultoría
+  # - soporte          # Servicios relacionados con el soporte
+  # - mantenimiento    # Servicios de mantenimiento
+  # - tecnologico      # Servicios tecnológicos
+  # - formacion        # Servicios de formación
+  # - desarrollo       # Servicios de desarrollo de software
+  # - especialidades   # Especialidades dentro de los servicios
+  # - personalizado    # Servicios personalizados
+  # - atencion_cliente # Servicios de atención al cliente
+  # - asesoramiento    # Servicios de asesoramiento
+  # - integracion      # Servicios de integración
+  # - pequenas_empresas # Servicios para pequeñas empresas
+  # - grandes_corporaciones # Servicios para grandes corporaciones
+  # - soporte_tecnico  # Soporte técnico
+  # - popular          # El servicio más popular
+  # - demostracion     # Solicitud de demostración de servicios
+  # - implementacion   # Servicios de implementación
+  # - optimizacion_procesos # Servicios de optimización de procesos
+  # - consultoria_tecnologia # Consultoría en tecnología
+  # - clientes               # Clientes con los que trabaja Servosis
+  # - empresas               # Empresas que han trabajado con Servosis
+  # - casos_exito            # Casos de éxito que tiene Servosis
+  # - principales_clientes   # Principales clientes de Servosis
+  # - universidades          # Universidades con las que colabora Servosis
+  # - centros_investigacion   # Centros de investigación con los que colabora Servosis
+  # - industrias             # Industrias con las que colabora Servosis
+  # - proyectos              # Proyectos realizados por Servosis con sus clientes
+  # - clientes_importantes   # Clientes más importantes de Servosis
+  - certificado # Para identificar si el usuario está solicitando el certificado ISO o preguntando sobre él.
+
+
+responses:
+  utter_saludo:
+    - text: "¡Hola!, ¿Cómo puedo ayudarle?"
+  utter_despedida:
+    - text: "Si necesita algo más, no dude en volver."
+  utter_afirmacion:
+    - text: "Perfecto, ¿en qué más puedo ayudarle?"
+  utter_negacion:
+    - text: "Entendido, si hay algo más en lo que pueda ayudarle, avíseme."
+  utter_ayuda:
+    - text: "¿Puedo ayudarle en algo más?"
+  utter_bot:
+    - text: "Soy un bot diseñado para ayudarle. ¿En qué puedo asistirle?"
+
+  utter_nuestro_equipo:
+    - text: |
+        SERVOSIS cuenta con un equipo multidisciplinar capaz de asumir cualquier reto que se proponga. Contamos con un grupo de ingenieros y técnicos especializados en las disciplinas de mecánica, software, electrónica y hardware.
+
+        Nuestro equipo es robusto, con formación y experiencia sólida y amplia, lo que nos permite garantizar que, en menos de 48 horas, nuestros técnicos puedan estar disponibles para nuestros clientes, ya sea para solventar averías o para colaborar en ensayos concretos.
+
+  utter_nuestras_instalaciones:
+    - text: |
+        En SERVOSIS contamos con instalaciones equipadas con maquinaria moderna y precisa que nos permite fabricar y ensamblar los elementos necesarios de manera autónoma. Esto asegura que cada proceso de producción sea eficiente y exacto.
+
+        Además, disponemos de una red de proveedores con servicio directo que complementa nuestra capacidad productiva, garantizando que podamos satisfacer cualquier necesidad de fabricación de forma rápida y eficaz.
+
+  utter_politica_calidad_general:
+    - text: |
+        En SERVOSIS, nuestra política de calidad se basa en la mejora continua de nuestros procesos y en proporcionar productos de alta calidad, siempre con un trato personalizado al cliente. Nuestro objetivo principal es satisfacer tanto a nuestros clientes como a nuestros empleados, buscando la eficiencia y rentabilidad en todas nuestras actividades de diseño, fabricación, comercialización y mantenimiento de máquinas de ensayo y sus componentes.
+
+        Para lograr esto, hemos implementado un Sistema de Calidad de acuerdo con la Norma UNE-EN ISO 9001 vigente, lo que nos compromete a cumplir con los requisitos de todas las partes implicadas en nuestro proceso. Nuestro equipo está comprometido con la identificación y análisis de riesgos y oportunidades, buscando siempre mejoras que nos lleven a la excelencia.
+
+  utter_politica_calidad_certificado:
+    - text: |
+        En SERVOSIS, contamos con la certificación ISO 9001, que asegura la calidad de nuestros procesos y productos. Puede descargar nuestro certificado aquí:  <a href="certificado ISO/Certificado-ISO_-9001_Servosis.pdf" target="_blank">Descargar Certificado ISO 9001</a>.
+
+  utter_videos_equipamiento:
+  - text: |
+      Claro, tenemos una serie de vídeos que muestran el funcionamiento de nuestras máquinas. A continuación, encontrará una selección de los vídeos disponibles.
+
+  utter_seleccionar_video:
+  - text: "Seleccione uno de los siguientes vídeos para ver más detalles:"
+    custom:
+      payload: dropDown
+      data:
+      - label: "Marcadora manual"
+        value: "Marcadora manual"
+      - label: "Marcadora Automática"
+        value: "Marcadora automática"
+      - label: "Máquina de corte y recalcado"
+        value: "Máquina de corte y recalcado"
+      - label: "Ensayo de impacto"
+        value: "Ensayo de impacto"
+      - label: "Prensa para ensayos de corte y recalcado"
+        value: "Prensa para ensayos de corte y recalcado"
+      - label: "Ensayo cíclico tracción-compresión sobre barra"
+        value: "Ensayo cíclico tracción-compresión sobre barra"
+
+  utter_contacto:
+    - text: "Puedo contactar con el equipo de Servosis a través del siguiente teléfono: 916 91 68 81, o a través del formulario que se encuentra en el apartado de 'Contacto'."
+
+  utter_clientes:
+    - text: "Empresas reconocidas en su sector como Cesa, Celsa Group o Tecnatom confían en nuestros servicios, además de diferentes instituciones públicas como CEDEX, la Universidad de Salamanca o la Universidad de Granada, entre otras. En el apartado 'Clientes' podrá ver todas las empresas e instituciones públicas que colaboran con nosotros, así como información sobre todos los sectores de las empresas que son nuestros clientes."
+
+  utter_retrofit:
+  - text: "Puede ver más información sobre las reconversiones que realizamos de máquinas de ensayo en el siguiente pdf:  <a href='servicios/03-SV-SL-Automatizaciones.pdf' target='_blank'>Servicio de reconversión de máquinas de ensayo.</a>."
+
+actions:
+  - action_politica_calidad
+  - action_mostrar_video
+  - action_lista_videos
+  - action_mostrar_servicios
+
+slots:
+  video_seleccionado:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: video_seleccionado
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+

@@ -1,0 +1,46 @@
+version: "3.1"
+
+stories:
+
+  - story: Bienvenida
+    steps:
+      - intent: saludo
+      - action: utter_saludo
+
+  - story: Confirmación
+    steps:
+      - intent: afirmacion
+      - action: utter_afirmacion
+
+  - story: Negación
+    steps:
+      - intent: negacion
+      - action: utter_negacion
+
+  - story: Consultar política de calidad general o certificado
+    steps:
+      - intent: politica_calidad
+      - action: action_politica_calidad
+
+  - story: Mostrar vídeos y manejar selección
+    steps:
+    - intent: videos_equipamiento
+      # El usuario solicita ver vídeos sobre equipamiento
+    - action: utter_videos_equipamiento
+      # Mostramos el listado de vídeos disponibles
+    - action: utter_seleccionar_video
+      # El bot responde con una lista de opciones para elegir
+    - intent: seleccionar_video
+      entities:
+      - video_seleccionado: ensayo_impacto
+      # El usuario selecciona 'ensayo_impacto'
+    - action: action_mostrar_video
+      # El bot muestra el vídeo seleccionado
+
+  - story: Servicios
+    steps:
+    - intent: servicios_ofrecidos
+    - action: action_mostrar_servicios
+    - action: utter_retrofit
+    - action: utter_ayuda
+

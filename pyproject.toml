@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "tfm"
+version = "0.1.0"
+description = "Servosis chatbot"
+authors = ["Antonio Jesús Becerra Almedina <antubes30@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "3.9.6"
+ml-dtypes="0.4.1"
+rasa = "3.6.20"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
