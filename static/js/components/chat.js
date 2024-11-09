@@ -43,13 +43,14 @@ function setBotResponse(response) {
     hideBotTyping();
     if (response.length < 1) {
       // if there is no response from Rasa, send  fallback message to the user
-      const fallbackMsg = "I am facing some issues, please try again later!!!";
+      const fallbackMsg = "Vaya, al parecer ha habido un error. ¿Puede repetir su consulta?";
 
       const BotResponse = `<img class="botAvatar" src="./static/img/chatbot_avatar.png"/><p class="botMsg">${fallbackMsg}</p><div class="clearfix"></div>`;
 
       $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
       scrollToBottomOfResults();
     } else {
+      console.log("Response array from Rasa: ", response);
       // if we get response from Rasa
       for (let i = 0; i < response.length; i += 1) {
         // check if the response contains "text"
@@ -141,7 +142,7 @@ function setBotResponse(response) {
           // check if the custom payload type is "pdf_attachment"
           if (payload === "pdf_attachment") {
             renderPdfAttachment(response[i]);
-            return;
+            // return;
           }
 
           // check if the custom payload type is "dropDown"

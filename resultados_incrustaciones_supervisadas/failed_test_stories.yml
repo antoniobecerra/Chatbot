@@ -1,0 +1,43 @@
+version: "3.1"
+stories:
+- story: Consulta sobre un producto, un accesorio y un servicio (.\tests\test_stories.yml)
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: subproducto_seleccionado  # predicted: subproducto_seleccionado: Me gustaría saber más sobre vuestra [máquina](producto) [ME 402](producto)
+  - action: action_compartir_pdf_subproducto
+  - action: action_listen  # predicted: utter_ayuda
+  - intent: producto  # predicted: servicio: También quiero información sobre qué máquinas podéis [certificar](certificado)
+  - action: action_mostrar_servicio  # predicted: utter_videos_equipamiento
+  - action: action_listen  # predicted: utter_ayuda
+  - intent: subproducto_seleccionado  # predicted: producto_seleccionado: Por último, me gustaría saber más sobre el [software](producto) [PCD2K](producto)
+  - action: action_compartir_pdf_subproducto  # predicted: action_unlikely_intent
+  - action: utter_ayuda
+  - user: |-
+      No necesito nada más, gracias.
+  - action: utter_negacion  # predicted: action_listen
+  - action: action_listen  # predicted: utter_ayuda
+- story: Consultar información sobre Servosis y sobre vídeos de equipos en funcionamiento (.\tests\test_stories.yml)
+  steps:
+  - intent: sobre_nosotros  # predicted: servicio: Me gustaría saber qué actividades realiza Servosis
+  - action: utter_sobre_nosotros
+  - action: utter_ayuda
+  - intent: fundacion_empresa
+  - action: utter_fundacion_empresa
+  - action: action_listen  # predicted: utter_ayuda
+  - intent: videos_equipamiento
+  - action: utter_videos_equipamiento  # predicted: action_unlikely_intent
+  - action: utter_seleccionar_video
+  - intent: seleccionar_video  # predicted: seleccionar_video: Quiero ver el [video de](video_seleccionado) la [marcadora manual](video_seleccionado)
+  - action: action_mostrar_video  # predicted: action_default_fallback
+  - action: action_listen  # predicted: utter_ayuda
+- story: Preguntas sobre los productos y servicios que ofrece Servosis (.\tests\test_stories.yml)
+  steps:
+  - intent: productos
+  - action: utter_productos
+  - action: action_listen  # predicted: action_mostrar_tipos_productos
+  - intent: tipo_producto_seleccionado  # predicted: tipo_producto_seleccionado: Quiero saber cuáles son las diferentes [máquinas](producto) que vende Servosis.
+  - action: action_tipo_producto_seleccionado
+  - intent: servicios_ofrecidos
+  - action: action_mostrar_servicios
+  - action: action_listen  # predicted: utter_ayuda

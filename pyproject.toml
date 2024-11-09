@@ -8,6 +8,7 @@ authors = ["Antonio Jesús Becerra Almedina <antubes30@gmail.com>"]
 python = "3.9.6"
 ml-dtypes="0.4.1"
 rasa = "3.6.20"
+spacy = "<3.8.2"
 
 
 [tool.poetry.dev-dependencies]

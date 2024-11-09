@@ -7,6 +7,22 @@ rules:
   - intent: saludo
   - action: utter_saludo
 
+- rule: Confirmación
+  steps:
+    - intent: afirmacion
+    - action: utter_afirmacion
+
+- rule: Negación
+  steps:
+    - intent: negacion
+    - action: utter_negacion
+
+- rule: Consultar política de calidad general o certificado
+  steps:
+    - intent: politica_calidad
+    - action: action_politica_calidad
+    - action: utter_ayuda
+
 - rule: Despedida
   steps:
   - intent: despedida
@@ -21,8 +37,40 @@ rules:
   steps:
   - intent: contacto
   - action: utter_contacto
+  - action: utter_ayuda
 
 - rule: testimonios y clientes
   steps:
   - intent: clientes
   - action: utter_clientes
+  - action: utter_ayuda
+
+- rule: ubicacion de Servosis
+  steps:
+  - intent: ubicacion
+  - action: utter_ubicacion
+  - action: utter_ayuda
+
+- rule: equipo_Servosis
+  steps:
+  - intent: nuestro_equipo
+  - action: utter_nuestro_equipo
+  - action: utter_ayuda
+
+- rule: instalaciones
+  steps:
+  - intent: nuestras_instalaciones
+  - action: utter_nuestras_instalaciones
+  - action: utter_ayuda
+
+- rule: fundación de la empresa
+  steps: 
+  - intent: fundacion_empresa
+  - action: utter_fundacion_empresa
+  - action: utter_ayuda
+
+- rule: Sobre Servosis
+  steps:
+  - intent: sobre_nosotros
+  - action: utter_sobre_nosotros
+  - action: utter_ayuda

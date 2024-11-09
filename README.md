@@ -13,3 +13,15 @@
 
 # The front-end used:
 https://github.com/JiteshGaikwad/Chatbot-Widget
+
+# Important:
+Debug console messages from javascript files have to be observed in the web or client console
+
+# To install spacy:
+poetry add spacy@<3.8.2
+
+# Instalamos el modelo que utiliza:
+python -m spacy download es_core_news_md
+
+
+

@@ -1,0 +1,247 @@
+[
+  {
+    "text": "¿Me puedes enviar el certificado ISO?",
+    "entities": [
+      {
+        "start": 21,
+        "end": 36,
+        "value": "certificado ISO",
+        "entity": "certificado"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "certificado",
+        "start": 21,
+        "end": 32,
+        "confidence_entity": 0.5138345956802368,
+        "value": "certificado",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Necesito saber más de los Platos de compresión",
+    "entities": [
+      {
+        "start": 26,
+        "end": 46,
+        "value": "Platos de compresión",
+        "entity": "producto"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "producto",
+        "start": 19,
+        "end": 21,
+        "confidence_entity": 0.6623197793960571,
+        "value": "de",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "producto",
+        "start": 26,
+        "end": 46,
+        "confidence_entity": 0.8937073349952698,
+        "value": "Platos de compresión",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Información de los Acondicionadores de señal, por favor",
+    "entities": [
+      {
+        "start": 19,
+        "end": 44,
+        "value": "Acondicionadores de señal",
+        "entity": "producto"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "producto",
+        "start": 12,
+        "end": 14,
+        "confidence_entity": 0.8505053520202637,
+        "value": "de",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "producto",
+        "start": 19,
+        "end": 44,
+        "confidence_entity": 0.8927198648452759,
+        "value": "Acondicionadores de señal",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "¿Qué me puedes decir del ME 405?",
+    "entities": [
+      {
+        "start": 25,
+        "end": 31,
+        "value": "ME 405",
+        "entity": "producto"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "producto",
+        "start": 5,
+        "end": 7,
+        "confidence_entity": 0.7372792959213257,
+        "value": "me",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "producto",
+        "start": 25,
+        "end": 31,
+        "confidence_entity": 0.7792791724205017,
+        "value": "ME 405",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "¿Qué me puedes contar del MUF 404?",
+    "entities": [
+      {
+        "start": 26,
+        "end": 33,
+        "value": "MUF 404",
+        "entity": "producto"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "producto",
+        "start": 5,
+        "end": 7,
+        "confidence_entity": 0.764316201210022,
+        "value": "me",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "producto",
+        "start": 26,
+        "end": 33,
+        "confidence_entity": 0.9992334842681885,
+        "value": "MUF 404",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "¿Qué me puedes decir del ME 408?",
+    "entities": [
+      {
+        "start": 25,
+        "end": 31,
+        "value": "ME 408",
+        "entity": "producto"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "producto",
+        "start": 5,
+        "end": 7,
+        "confidence_entity": 0.6781474947929382,
+        "value": "me",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "producto",
+        "start": 25,
+        "end": 31,
+        "confidence_entity": 0.7259429097175598,
+        "value": "ME 408",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "¿Qué sabes de la Enderezadora de barras?",
+    "entities": [
+      {
+        "start": 17,
+        "end": 39,
+        "value": "Enderezadora de barras",
+        "entity": "producto"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "producto",
+        "start": 17,
+        "end": 29,
+        "confidence_entity": 0.9999163150787354,
+        "value": "Enderezadora",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "producto",
+        "start": 33,
+        "end": 39,
+        "confidence_entity": 0.9972577691078186,
+        "value": "barras",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Información de los Equipos de control climático y térmico para ensayos de precisión",
+    "entities": [
+      {
+        "start": 19,
+        "end": 83,
+        "value": "Equipos de control climático y térmico para ensayos de precisión",
+        "entity": "producto"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "producto",
+        "start": 12,
+        "end": 14,
+        "confidence_entity": 0.8490322828292847,
+        "value": "de",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "producto",
+        "start": 19,
+        "end": 83,
+        "confidence_entity": 0.885109007358551,
+        "value": "Equipos de control climático y térmico para ensayos de precisión",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

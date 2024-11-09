@@ -2,90 +2,63 @@
 #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
 
 stories:
-- story: happy path 1
-  steps:
-  - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+  - story: Consulta sobre un producto, un accesorio y un servicio
+    steps:
+    - user: "Muy buenos días. Tengo una consulta"
+      intent: saludo
+    - action: utter_saludo
+    - user: "Me gustaría saber más sobre vuestra máquina ME 402"
+      intent: subproducto_seleccionado
+      entities:
+        - producto: "ME 402"
+    - action: action_compartir_pdf_subproducto
+    - user: "También quiero información sobre qué máquinas podéis certificar"
+      intent: producto
+      entities:
+        - producto: "certificar"
+    - action: action_mostrar_servicio
+    - user: "Por último, me gustaría saber más sobre el software PCD2K"    
+      intent: subproducto_seleccionado
+      entities:
+        - producto: "PCD2K"
+    - action: action_compartir_pdf_subproducto
+    - action: utter_ayuda
+    - user: "No necesito nada más, gracias."
+    - action: utter_negacion
 
-- story: happy path 2
-  steps:
-  - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
-  - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
+  - story: Consultar información sobre Servosis y sobre vídeos de equipos en funcionamiento
+    steps:
+    - user: "Me gustaría saber qué actividades realiza Servosis"
+      intent: sobre_nosotros
+    - action: utter_sobre_nosotros
+    - action: utter_ayuda
+    - user: "Sí, me gustaría saber quién dió lugar a esta compañía"
+      intent: fundacion_empresa
+    - action: utter_fundacion_empresa
+    - user: "Me gustaría saber si Servosis expone algún tipo de vídeo sobre el funcionamiento de alguna de sus máquinas."
+      intent: videos_equipamiento 
+    - action: utter_videos_equipamiento
+    - action: utter_seleccionar_video
+    - user: "Quiero ver el video de la marcadora manual"
+      intent: seleccionar_video
+      entities:
+        - video_seleccionado: "marcadora manual"
+    - action: action_mostrar_video
 
-- story: sad path 1
-  steps:
-  - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      yes
-    intent: affirm
-  - action: utter_happy
+  - story: Preguntas sobre los productos y servicios que ofrece Servosis
+    steps:
+    - user: "Quiero saber qué productos proporciona Servosis"
+      intent: productos
+    - action: utter_productos
+    - user: Quiero saber cuáles son las diferentes máquinas que vende Servosis.
+      intent: tipo_producto_seleccionado
+      entities:
+        - producto: "máquinas"
+    - action: action_tipo_producto_seleccionado
+    - user: "¿Y qué servicios da Servosis?"
+      intent: servicios_ofrecidos
+    - action: action_mostrar_servicios
 
-- story: sad path 2
-  steps:
-  - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      not really
-    intent: deny
-  - action: utter_goodbye
 
-- story: sad path 3
-  steps:
-  - user: |
-      hi
-    intent: greet
-  - action: utter_greet
-  - user: |
-      very terrible
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      no
-    intent: deny
-  - action: utter_goodbye
 
-- story: say goodbye
-  steps:
-  - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
 
-- story: bot challenge
-  steps:
-  - user: |
-      are you a bot?
-    intent: bot_challenge
-  - action: utter_iamabot

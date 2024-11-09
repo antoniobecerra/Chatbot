@@ -9,6 +9,8 @@ function renderPdfAttachment(pdf_data) {
 <i class="fa fa-file-pdf-o" aria-hidden="true"></i></div><div class="col s9 pdf_link"><a href="${pdf_url}" target="_blank">
 ${pdf_title} </a></div></div></div>`;
 
+    console.log("url: ", pdf_url, "\n title: ", pdf_title, "\n pdf_attachment: ", pdf_attachment);
+
     $(".chats").append(pdf_attachment);
     scrollToBottomOfResults();
 }

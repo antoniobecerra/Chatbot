@@ -1,0 +1,155 @@
+{
+    "maquinas_de_ensayo":{
+        "Máquinas universales tracción-compresión": [
+            {
+                "title": "ME 402",
+                "description": "Máquina de ensayos estáticos de tracción, compresión y flexión con capacidad de carga entre 1 y 300 kN.\nVelocidad de ensayo hasta 1000 mm/min, ideal para todo tipo de materiales.\nFuncionamiento electromecánico con husillo a bolas, medida de fuerza por célula de carga y desplazamiento mediante encoder digital.\nCompatible con diversos accesorios."
+            },
+            {
+                "title": "ME 405",
+                "description": "Máquina de ensayos estáticos de tracción, compresión y flexión con capacidad de carga entre 1 y 500 kN.\nVelocidad de ensayo hasta 1000 mm/min, alta deformación.\nRecorrido del puente de carga hasta 1200 mm, adecuada para todo tipo de materiales.\nFuncionamiento electromecánico con 2 husillos a bolas, medida de fuerza por célula de carga y desplazamiento mediante encoder digital.\nCompatible con diversos accesorios."
+            },
+            {
+                "title": "MUE 403",
+                "description": "Máquina de ensayos estáticos de tracción, compresión y flexión con capacidad de carga entre 50 y 1000 kN.\nPermite ensayos cíclicos hasta 5 Hz y velocidad de ensayo hasta 200 mm/min, ideal para todo tipo de materiales.\nFuncionamiento servohidráulico, medida de fuerza por célula de carga y desplazamiento mediante captador lineal SSI.\nCompatible con diversos accesorios."
+            },
+            {
+                "title": "MUE 404",
+                "description": "Máquina de ensayos estáticos de tracción, compresión y flexión con capacidad de carga entre 400 y 3000 kN.\nPermite ensayos cíclicos hasta 5 Hz y velocidad de ensayo hasta 200 mm/min, adecuada para todo tipo de materiales.\nFuncionamiento servohidráulico, medida de fuerza por célula de carga y desplazamiento mediante captador lineal SSI.\nCompatible con diversos accesorios."
+            }
+        ],
+
+        "Máquinas dinámicas y de fatiga":  [
+            {
+                "title": "MUF 401",
+                "description": "Máquina de ensayos dinámicos de tracción, compresión y flexión.\nEnsayos cíclicos hasta 100 Hz.\nCapacidad de carga entre 10 y 500 kN.\nVelocidad de ensayos hasta 200 mm/min.\nPosibilidad de sincronizar controles de temperatura y de ensayos.\nEnsayos de suelos, asfaltos, cauchos, automoción, ferroviario, aeronáutico.\nPrincipio de funcionamiento servohidráulico.\nMedida de fuerza mediante célula de carga.\nMedida de desplazamiento mediante captador lineal SSI.\nPosibilidad de incorporar cámaras climáticas, extensometría, mordazas, y cualquier accesorio."
+            },
+            {
+                "title": "MUF 404",
+                "description": "Máquina de ensayos cíclicos de tracción, compresión y flexión.\nEnsayos cíclicos de alta capacidad para simulación de comportamiento ante sismos.\nEnsayos tracción-compresión con paso por valor cero.\nCapacidad de carga entre 10 y 2000 kN.\nVelocidad de ensayos hasta 200 mm/min.\nEnsayo cíclico tracción-compresión.\nEnsayos de barra de acero lisa y corrugada.\nPrincipio de funcionamiento servohidráulico.\nMedida de fuerza mediante célula de carga.\nMedida de desplazamiento mediante captador lineal SSI.\nPosibilidad de incorporar cualquier accesorio."
+            }
+        ],
+        "Máquinas para compresión de hormigones y rocas":[
+            {
+                "title": "Serie MES",
+                "description":"Máquinas de ensayos estáticos de compresión y flexión con capacidad de carga entre 1500 y 8000 kN.\nVelocidad de ensayo hasta 200 mm/min.\n Compatibles con probetas normalizadas cúbicas o cilíndricas, ideales para ensayos de hormigones, rocas, prefabricados, tubos, cauchos, maderas, embalajes y plásticos.\nPrincipio de funcionamiento servohidráulico, con medición de fuerza mediante célula de carga o captador de presión, y desplazamiento a través de captador lineal SSI.\nPosibilidad de incorporar cualquier plato de compresión, dispositivos de flexión, cámaras climáticas y otros accesorios específicos."
+            }
+        ],
+        "Máquinas de Torsión":[
+            {
+                "title": "Máquina para ensayos de flexión rotativa",
+                "description": "Ensayos combinados de torsión y tracción sobre amortiguadores, con capacidad de aplicación de par hasta 500 N·m y velocidad de ensayo hasta 200 rpm. Capacidad de carga de tracción hasta 10 t, con accionamiento por servomotor y tracción mediante servoactuador lineal hidráulico. Medición de par mediante célula de par, fuerza axial con célula de carga y giro y ángulo a través de encoder digital."
+            },
+                        {
+                "title": "Serie MT",
+                "description": "Máquinas para ensayos de giro y torsión con capacidad de aplicación de par entre 10 y 5000 N·m. Velocidad de ensayo hasta 500 rpm, ideales para ensayos de trefilados, alambres, cables, tornillería, biomateriales y sectores como automoción, aeronáutica, ferroviario y naval. Accionamiento mediante servomotor con medida de par aplicada por célula de par y medición de giro y ángulo a través de encoder digital. Posibilidad de incorporar mordazas a medida, detectores de rotura por continuidad, accesorios para pretensado y extensómetros."
+            }
+        ],
+        "Pórticos monoactuador y multiactuador":[
+            {
+                "title": "ME 406",
+                "description": "Máquina de ensayos estáticos y dinámicos para grandes estructuras, componentes de automoción, aeronáutica y naval, mobiliario, enganches y remolques, y ensayo de vías. Ideal para ensayos de vibraciones en cargas y embalajes. Diseños específicos adaptados a cada proyecto, con actuadores lineales o rotativos, verticales u horizontales, actuando con o sin sincronismo. Capacidad de carga hasta 2500 kN, con opción de consultar otras capacidades. Compatible con diversos accesorios como mordazas, platos, dispositivos de flexión, extensometría, cámaras climáticas y hornos."
+            }
+        ],
+        "Actuadores hidráulicos":[
+            {
+                "title": "Serie CH4",
+                "description": "Actuadores para ensayos estáticos y quasi-estáticos pudiendo trabajar ocasionalmente en modo dinámico hasta 10 Hz."
+            },
+                        {
+                "title": "Serie CH9",
+                "description": "Actuadores dinámicos, concebidos para la realización de ensayos de fatiga con una gran precisión en el control de la fuerza y el desplazamiento."
+            }
+        ],
+        "Máquina para ensayo de apoyos elastoméricos":[
+            {
+                "title": "ME 408",
+                "description": "Máquina de ensayos combinados de compresión y cizalladura, diseñada específicamente para apoyos elastoméricos en grandes estructuras y puentes. Equipada con dos actuadores de carga axial de 6 MN y un actuador de carga lateral de 1,5 MN. Velocidad de hasta 220 mm/min en carga axial y 800 mm/min en carga lateral. Funcionamiento hidráulico con medida de fuerza mediante célula de carga y captadores de presión, y desplazamiento mediante captadores lineales. Realiza ensayos según norma UNE-EN 1337:3."
+            }
+        ],
+        "Preparación de muestras metálicas para tracción":[
+            {
+                "title": "Enderezadora de barras",
+                "description": "Máquina para enderezado de barras provenientes de rollos. Disponible en versión manual y automática, con capacidad para diámetros de Ø 8 a Ø 24. Cumple con la Instrucción de Hormigón Estructural. Anejo 23."
+            },
+            {
+                "title": "Marcadora de probetas",
+                "description": "Diseñada para marcar barras lisas o corrugadas de cualquier diámetro, optimizando la preparación para ensayos de tracción. Marcas visibles para extensometría, con distancia ajustable entre marcas. Disponible en versión manual y automática."
+            },
+            {
+                "title": "Mesa de envejecimiento de probetas",
+                "description": "Bañera de envejecimiento con control de temperatura para barras de cualquier longitud. Control de temperatura hasta 100°C, con opción de conexión a PC para control y registro de eventos. Dimensiones personalizables para adaptarse a distintos requisitos."
+
+            }
+        ],
+        "Máquina de corte y recalcado":[
+            {
+                "title": "Mod MCR",
+                "description": "Servosis ofrece la máquina Mod MCR, diseñada para corte y recalcado, capaz de manejar hasta 9 diámetros en la zona de corte, con altura programable y control automático para una operación segura."
+            }
+        ]
+    },
+
+    "accesorios":{
+        "Software de control":[
+            {
+                "title": "PCD2K",
+                "description": "PCD2K es un software de control universal diseñado para llevar a cabo ensayos dinámicos y estáticos en nuestra gama de marcos de ensayo. Este software ofrece una interfaz intuitiva que permite a los usuarios programar y monitorear ensayos de manera eficiente, garantizando la precisión y confiabilidad de los resultados. Con características avanzadas de análisis de datos y la capacidad de generar informes detallados, el PCD2K se convierte en una herramienta indispensable para laboratorios y centros de investigación que requieren un control riguroso en sus ensayos."
+            },
+            {
+                "title": "TD2K",
+                "description": "TD2K es un software especializado en la adquisición de datos en tiempo real, diseñado para ser utilizado tanto en nuestras máquinas de ensayo como en otros tipos de equipamiento. Este software permite a los usuarios recopilar, visualizar y analizar datos de manera eficiente, asegurando un monitoreo preciso durante los ensayos. Con su capacidad para integrarse con diversos dispositivos, el TD2K proporciona una solución flexible y confiable para laboratorios y entornos de investigación que requieren un control exhaustivo de los datos."
+
+            }
+        ],
+        "Celdas de carga":[
+            {
+                "title": "Células de carga",
+                "description": "Las celdas o células de carga fabricadas por Servosis son reconocidas por su alto grado de robustez y confiabilidad. Estos dispositivos son sometidos a rigurosos procesos de calibración, algunos de los cuales están certificados por ENAC, garantizando su precisión y calidad. Además, ofrecemos una variedad de capacidades y dimensiones estándar, con la posibilidad de personalizarlas bajo pedido, adaptándose así a las necesidades específicas de cada cliente."
+            }
+        ],
+        "Mordazas para tracción":[
+            {
+                "title": "Mordazas para ensayos de tracción",
+                "description": "Las mordazas de accionamiento hidráulico pueden conectarse al grupo hidráulico de la máquina de ensayos o suministrarse como un elemento independiente con un grupo hidráulico dedicado. Todos los modelos están equipados con cuñas de amarre intercambiables, lo que permite el ajuste para muestras de diferentes diámetros y caras planas. Las series 4011 y 4013 ofrecen, como opción, un mecanismo de bloqueo que permite realizar ensayos de tracción y compresión, facilitando el paso por carga cero."
+            }
+        ],
+        "Platos de compresión": [
+            {
+                "title": "Platos para ensayos de compresión",
+                "description": "Disponibles en formatos redondos, cuadrados y cilíndricos, nuestros platos de compresión están diseñados para adaptarse a diversas necesidades de ensayo. Ofrecemos opciones en grandes formatos y con rótulas, ya sea con bloqueo o sin él. Con capacidades de carga de hasta 50 MN, estos platos son compatibles con cualquier máquina de ensayo, y también proporcionamos diseños a medida para satisfacer requerimientos específicos."
+            }
+        ],
+        "Dispositivos de flexión": [
+            {
+                "title": "Dispositivos para ensayos de flexión",
+                "description": "En Servosis, diseñamos y fabricamos una amplia gama de utillajes para ensayos a flexión, adaptándonos a las necesidades específicas de nuestros clientes. Nuestros dispositivos se elaboran conforme a las Normas de ensayo, garantizando la precisión y fiabilidad en cada prueba. Además, ofrecemos soluciones personalizadas para satisfacer los requerimientos individuales de cada proyecto."
+            }
+        ],
+        "Mezclas bituminosas": [
+            {
+                "title": "Soluciones en mezclas bituminosas",
+                "description": "En Servosis, ofrecemos soluciones innovadoras y en constante evolución para el campo de los ensayos sobre mezclas bituminosas. Nuestro enfoque se centra en garantizar la calidad y durabilidad de las mezclas, adaptándonos a las normativas y estándares del sector. Con tecnología avanzada y un equipo de expertos, aseguramos resultados precisos y confiables en cada análisis."
+
+            }
+        ],
+        "Extensómetros y videoextensómetros": [
+            {
+                "title": "Extensometría",
+                "description": "En Servosis, diseñamos y fabricamos extensómetros específicos para una variedad de ensayos, incluyendo tracción, compresión, y medidas axiales y diametrales. Nuestros extensómetros están diseñados para ofrecer precisión y fiabilidad en cada medición, adaptándose a las exigencias de cada aplicación. Con un enfoque en la innovación y la calidad, garantizamos productos que cumplen con las normativas del sector."
+            }
+        ],
+        "Cámaras climáticas y hornos": [
+            {
+                "title": "Equipos de control climático y térmico para ensayos de precisión",
+                "description": "En Servosis, ofrecemos una amplia gama de equipos de control climático y térmico, incluyendo cámaras de temperatura y humedad, hornos, estufas y accesorios diseñados para altas temperaturas. Cada equipo se selecciona específicamente para satisfacer las necesidades de cada proyecto, asegurando que nuestros clientes dispongan siempre de la tecnología más adecuada. Además, nuestro sistema de control PCD2K permite la sincronización efectiva de estos accesorios con las máquinas de ensayo, optimizando así el proceso de prueba y garantizando resultados precisos."
+            }
+        ],
+        "Acondicionadores de señal": [
+            {
+                "title":"Acondicionadores de señal y tarjetas de medición",
+                "description": "Disponemos de una amplia gama de tarjetas de medición y acondicionadores de señal."
+            }
+        ]
+    }
+}

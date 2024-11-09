@@ -2,26 +2,6 @@ version: "3.1"
 
 stories:
 
-  - story: Bienvenida
-    steps:
-      - intent: saludo
-      - action: utter_saludo
-
-  - story: Confirmación
-    steps:
-      - intent: afirmacion
-      - action: utter_afirmacion
-
-  - story: Negación
-    steps:
-      - intent: negacion
-      - action: utter_negacion
-
-  - story: Consultar política de calidad general o certificado
-    steps:
-      - intent: politica_calidad
-      - action: action_politica_calidad
-
   - story: Mostrar vídeos y manejar selección
     steps:
     - intent: videos_equipamiento
@@ -32,15 +12,64 @@ stories:
       # El bot responde con una lista de opciones para elegir
     - intent: seleccionar_video
       entities:
-      - video_seleccionado: ensayo_impacto
-      # El usuario selecciona 'ensayo_impacto'
+      - video_seleccionado
     - action: action_mostrar_video
       # El bot muestra el vídeo seleccionado
+    - action: utter_ayuda
 
   - story: Servicios
     steps:
     - intent: servicios_ofrecidos
     - action: action_mostrar_servicios
-    - action: utter_retrofit
     - action: utter_ayuda
+
+  - story: Mostrar servicio
+    steps:
+    - intent: servicio
+      entities:
+        - producto
+    - action: action_mostrar_servicio
+    - action: utter_ayuda
+
+
+  - story: Elegir tipo de producto
+    steps:
+    - intent: productos
+    - action: utter_productos
+    - action: action_mostrar_tipos_productos
+    - intent: tipo_producto_seleccionado
+      entities:
+        - producto
+    - action: action_tipo_producto_seleccionado
+    - intent: producto_seleccionado
+      entities:
+        - producto
+    - action: action_mostrar_subproductos
+    - intent: subproducto_seleccionado
+      entities:
+        - producto
+    - action: action_compartir_pdf_subproducto
+    - action: utter_ayuda
+
+  - story: Mostrar subproducto
+    steps:
+    - intent: subproducto_seleccionado
+      entities:
+        - producto
+    - action: action_compartir_pdf_subproducto
+    - action: utter_ayuda
+
+  - story: Identificar si el usuario busca accesorios o máquinas de ensayo
+    steps:
+    - intent: tipo_producto_seleccionado
+      entities:
+        - producto
+    - action: action_tipo_producto_seleccionado
+
+  - story: Mostrar producto
+    steps:
+    - intent: producto_seleccionado
+      entities:
+        - producto
+    - action: action_mostrar_subproductos
 

@@ -1,0 +1,8 @@
+# Folder that contain some files of proof.
+**/tmp
+
+# The memory of the TFM
+*memoria*
+
+*.docx
+*.tmp

@@ -13,23 +13,6 @@ nlu:
     - hola, necesito ayuda
     - hola, quisiera realizar una consulta
 
-- intent: despedida
-  examples: |
-    - adiós
-    - hasta luego
-    - nos vemos
-    - cuídate
-    - chao
-    - gracias y adiós
-    - hasta la próxima
-    - que tenga un buen día
-    - hasta pronto
-    - adiós, Servosis
-    - saludos y hasta luego
-    - gracias por su atención
-    - eso es todo, gracias
-
-
 - intent: afirmacion
   examples: |
     - sí
@@ -48,6 +31,21 @@ nlu:
     - está bien
     - eso mismo
     - efectivamente
+- intent: despedida
+  examples: |
+    - adiós
+    - hasta luego
+    - nos vemos
+    - cuídate
+    - chao
+    - gracias y adiós
+    - hasta la próxima
+    - que tenga un buen día
+    - hasta pronto
+    - adiós, Servosis
+    - saludos y hasta luego
+    - gracias por su atención
+    - eso es todo, gracias
 
 - intent: negacion
   examples: |
@@ -72,6 +70,7 @@ nlu:
     - no es lo que busco
     - me temo que no
 
+
 ############################################################
 ############################################################
 ############### Quienes somos ##############################
@@ -91,21 +90,20 @@ nlu:
 - intent: sobre_nosotros
   examples: |
     - ¿Qué es Servosis?
+    - ¿Qué actividades lleva a cabo Servosis?
     - ¿Me puede contar sobre la empresa Servosis?
     - ¿Qué hace Servosis?
     - ¿Qué es lo que hace Servosis?
     - ¿A qué se dedica Servosis?
     - ¿Quiénes sois?
 
-- intent: fundador_empresa
+- intent: fundacion_empresa
   examples: |
     - ¿Quién fundó la empresa?
     - ¿Quién es el fundador de Servosis?
     - ¿Quién creó Servosis?
+    - ¿Quién creó esta compañía?
     - ¿Quiénes crearon la empresa Servosis?
-
-- intent: fecha_fundacion_empresa
-  examples: |
     - ¿Cuándo se creó Servosis?
     - ¿En qué año se fundó Servosis?
     - ¿Cuándo se fundó la empresa?
@@ -168,13 +166,30 @@ nlu:
 
 - intent: seleccionar_video
   examples: |
-    - [Marcadora manual](video_seleccionado)
-    - [Marcadora automática](video_seleccionado)
-    - [Máquina de corte y recalcado](video_seleccionado)
-    - [Ensayo de impacto](video_seleccionado)
-    - [Prensa para ensayos de corte y recalcado](video_seleccionado)
-    - [Ensayo cíclico tracción-compresión sobre barra](video_seleccionado)
-
+    - [Video marcadora manual](video_seleccionado)
+    - [Video marcadora automática](video_seleccionado)
+    - [Video máquina de corte y recalcado](video_seleccionado)
+    - [Video ensayo de impacto](video_seleccionado)
+    - [Video prensa para ensayos de corte y recalcado](video_seleccionado)
+    - [Video ensayo cíclico tracción-compresión sobre barra](video_seleccionado)
+    - Quiero ver el [Video marcadora manual](video_seleccionado)
+    - Muéstrame el [Video marcadora manual](video_seleccionado)
+    - Estoy buscando el [Video marcadora manual](video_seleccionado)
+    - ¿Puedo ver el [Video marcadora automática](video_seleccionado)?
+    - Dime dónde puedo ver el [Video marcadora automática](video_seleccionado)
+    - Enséñame el [Video marcadora automática](video_seleccionado)
+    - Estoy interesado en el [Video máquina de corte y recalcado](video_seleccionado)
+    - Muéstrame el [Video máquina de corte y recalcado](video_seleccionado)
+    - Quiero ver el [Video máquina de corte y recalcado](video_seleccionado)
+    - ¿Puedo ver el [Video ensayo de impacto](video_seleccionado)?
+    - Estoy buscando el [Video ensayo de impacto](video_seleccionado)
+    - Enséñame el [Video ensayo de impacto](video_seleccionado)
+    - Dime dónde puedo ver el [Video prensa para ensayos de corte y recalcado](video_seleccionado)
+    - Estoy interesado en el [Video prensa para ensayos de corte y recalcado](video_seleccionado)
+    - Muéstrame el [Video prensa para ensayos de corte y recalcado](video_seleccionado)
+    - Quiero ver el [Video ensayo cíclico tracción-compresión sobre barra](video_seleccionado)
+    - ¿Puedo ver el [Video ensayo cíclico tracción-compresión sobre barra](video_seleccionado)?
+    - Enséñame el [Video ensayo cíclico tracción-compresión sobre barra](video_seleccionado)
 
 - intent: servicios_ofrecidos
   examples: |
@@ -184,6 +199,26 @@ nlu:
     - ¿Qué incluye el catálogo de servicios de Servosis?
     - ¿Qué tipo de servicios ofrecéis?
     - ¿Cuáles son los servicios que proporcionáis?
+
+- intent: servicio
+  examples: |
+    - ¿Podrías explicarme qué servicios de [calibraciones](producto) proporcionan?
+    - Quiero saber más sobre las [calibraciones](producto) que Servosis realiza.
+    - ¿Qué procesos implican las [calibraciones](producto) en sus máquinas?
+    - ¿Qué máquinas [certifica](producto) Servosis?
+    - ¿Qué [certificados de calibración](producto) entrega Servosis?
+    - ¿Qué máquinas [certifica](producto) Servosis?
+    - Estoy interesado en el servicio de [actualización](producto) de máquinas antiguas; ¿me puedes dar detalles?
+    - ¿Cuáles son las características de los servicios de [actualización](producto) de máquinas antiguas?
+    - ¿Qué tipo de [mantenimiento](producto) está disponible en Servosis?
+    - ¿Podrías darme un resumen de los servicios de [mantenimiento](producto) que ofrecen?
+    - ¿Realizan [calibraciones](producto) a medida según las necesidades del cliente?
+    - Estoy buscando información sobre sus [calibraciones](producto); ¿me podrías ayudar?
+    - ¿Ofrecen algún servicio adicional relacionado con [mantenimiento](producto)?
+    - ¿Cuáles son los beneficios de utilizar sus [calibraciones](producto)?
+    - ¿Pueden realizar un servicio de [mantenimiento](producto) en mis instalaciones?
+    - ¿Qué tipos de equipos manejan en las [calibraciones](producto)?
+
 
 - intent: bot
   examples: |
@@ -203,23 +238,226 @@ nlu:
     - Me han surgido dudas acerca de los servicios.
     - Tengo dudas sobre una máquina en particular.
     - ¿Con quién puedo hablar para resolver dudas?
+    - ¿Puedes proporcionarme el contacto de Servosis?
 
 - intent: clientes
   examples: |
-  - ¿Qué instituciones confían en Servosis?
-  - ¿Qué clientes tiene Servosis?
-  - Dime qué tipo de clientes tiene la empresa.
-  - ¿Quiénes confían en Servosis?
-  - ¿Cuáles son los principales clientes de Servosis?
-  - ¿Qué empresas son clientes de Servosis?
-  - ¿Quiénes colaboran con Servosis?
-  - ¿Con qué clientes trabaja Servosis?
-  - ¿Qué empresas han trabajado con Servosis?
-  - ¿Servosis tiene casos de éxito?
-  - ¿Cuáles son los principales_clientes de Servosis?
-  - ¿Dónde puedo ver los clientes de Servosis?
-  - ¿Cuáles son los clientes más importantes de Servosis?
+    - ¿Qué instituciones confían en Servosis?
+    - ¿Qué clientes tiene Servosis?
+    - Dime qué tipo de clientes tiene la empresa.
+    - ¿Quiénes confían en Servosis?
+    - ¿Cuáles son los principales clientes de Servosis?
+    - ¿Qué empresas son clientes de Servosis?
+    - ¿Quiénes colaboran con Servosis?
+    - ¿Con qué clientes trabaja Servosis?
+    - ¿Qué empresas han trabajado con Servosis?
+    - ¿Servosis tiene casos de éxito?
+    - ¿Cuáles son los principales_clientes de Servosis?
+    - ¿Dónde puedo ver los clientes de Servosis?
+    - ¿Cuáles son los clientes más importantes de Servosis?
 
 - intent: productos
   examples: |
-    
+    - ¿Qué productos ofrece Servosis?
+    - ¿Puedo obtener información sobre los productos de Servosis?
+    - ¿Qué tipos de equipos venden?
+    - ¿Qué productos ofrece Servosis?
+    - ¿Qué productos vende Servosis?
+
+- intent: tipo_producto_seleccionado
+  examples: |
+    - [maquinas_de_ensayo](producto)
+    - [accesorios](producto)
+    - Quiero ver las [maquinas_de_ensayo](producto)
+    - Dame más información sobre las [maquinas_de_ensayo](producto)
+    - Me interesan los [accesorios](producto)
+    - Necesito detalles sobre los [accesorios](producto)
+    - ¿Tienes más información sobre [accesorios](producto)?
+    - Cuéntame acerca de las [maquinas_de_ensayo](producto)
+    - ¿Qué tipo de [maquinas_de_ensayo](producto) tienen?
+    - ¿Qué [accesorios](producto) ofrece Servosis?
+    - ¿Qué [máquinas de ensayo](producto) ofrece Servosis?
+    - ¿Puedo ver los [accesorios](producto)?
+    - Quiero saber sobre los [accesorios](producto)
+    - Estoy buscando más información de las [maquinas_de_ensayo](producto)
+    - Me gustaría saber qué [máquinas](producto) ofrece Servosis
+    - ¿Qué tipo de [máquinas](producto) vende Servosis?
+    - ¿Cuáles son las [máquinas](producto) que ofrecéis?
+
+- intent: producto_seleccionado
+  examples: |
+    - [Máquinas universales tracción-compresión](producto)
+    - [Máquinas dinámicas y de fatiga](producto)
+    - [Máquinas para compresión de hormigones y rocas](producto)
+    - [Máquinas de Torsión](producto)
+    - [Pórticos monoactuador y multiactuador](producto)
+    - [Actuadores hidráulicos](producto)
+    - [Máquina para ensayo de apoyos elastoméricos](producto)
+    - [Preparación de muestras metálicas para tracción](producto)
+    - [Máquina de corte y recalcado](producto)
+    - [Software de control](producto)
+    - [Celdas de carga](producto)
+    - [Mordazas para tracción](producto)
+    - [Platos de compresión](producto)
+    - [Dispositivos de flexión](producto)
+    - [Mezclas bituminosas](producto)
+    - [Extensómetros y videoextensómetros](producto)
+    - [Cámaras climáticas y hornos](producto)
+    - [Acondicionadores de señal](producto)
+    - Quiero información sobre [Máquinas universales tracción-compresión](producto)
+    - Dime más sobre las [Máquinas universales tracción-compresión](producto)
+    - Estoy interesado en las [Máquinas universales tracción-compresión](producto)
+    - Quiero saber sobre las [Máquinas dinámicas y de fatiga](producto)
+    - Estoy buscando detalles de las [Máquinas dinámicas y de fatiga](producto)
+    - Dime más acerca de las [Máquinas dinámicas y de fatiga](producto)
+    - Necesito más información sobre las [Máquinas para compresión de hormigones y rocas](producto)
+    - ¿Qué me puedes contar sobre las [Máquinas para compresión de hormigones y rocas](producto)?
+    - Cuéntame sobre las [Máquinas para compresión de hormigones y rocas](producto)
+    - Estoy buscando información sobre las [Máquinas de Torsión](producto)
+    - Dime más sobre las [Máquinas de Torsión](producto)
+    - ¿Qué me puedes decir de los [Pórticos monoactuador y multiactuador](producto)?
+    - Más detalles sobre los [Pórticos monoactuador y multiactuador](producto)
+    - Necesito saber más de los [Pórticos monoactuador y multiactuador](producto)
+    - Quiero saber más sobre los [Actuadores hidráulicos](producto)
+    - Información sobre los [Actuadores hidráulicos](producto), por favor
+    - ¿Tienen más detalles de los [Actuadores hidráulicos](producto)?
+    - Estoy buscando más información sobre la [Máquina para ensayo de apoyos elastoméricos](producto)
+    - ¿Qué más ofrecen sobre la [Máquina para ensayo de apoyos elastoméricos](producto)?
+    - Dime más acerca de la [Máquina para ensayo de apoyos elastoméricos](producto)
+    - Necesito saber más de la [Preparación de muestras metálicas para tracción](producto)
+    - Información sobre la [Preparación de muestras metálicas para tracción](producto)
+    - Quiero conocer más detalles de la [Máquina de corte y recalcado](producto)
+    - ¿Qué características tiene la [Máquina de corte y recalcado](producto)?
+    - Dime más sobre el [Software de control](producto)
+    - Estoy interesado en el [Software de control](producto)
+    - Quiero saber más sobre las [Células de carga](producto)
+    - Más detalles sobre las [Células de carga](producto), por favor
+    - Información sobre las [Mordazas para tracción](producto)
+    - Estoy buscando más información de las [Mordazas para tracción](producto)
+    - Cuéntame más sobre los [Platos de compresión](producto)
+    - Necesito saber más de los [Platos de compresión](producto)
+    - Estoy interesado en los [Dispositivos de flexión](producto)
+    - Dime más detalles sobre los [Dispositivos de flexión](producto)
+    - Quiero conocer más de las [Mezclas bituminosas](producto)
+    - Información sobre las [Mezclas bituminosas](producto), por favor
+    - Dime más sobre los [Extensómetros y videoextensómetros](producto)
+    - Necesito más información sobre los [Extensómetros y videoextensómetros](producto)
+    - Información de las [Cámaras climáticas y hornos](producto)
+    - Dime más detalles sobre las [Cámaras climáticas y hornos](producto)
+    - Quiero saber más sobre los [Acondicionadores de señal](producto)
+    - Información de los [Acondicionadores de señal](producto), por favor
+
+
+- intent: subproducto_seleccionado
+  examples: |
+    - [ME 402](producto)
+    - [ME 405](producto)
+    - [ME 403](producto)
+    - [ME 404](producto)
+    - [MUF 401](producto)
+    - [MUF 404](producto)
+    - [Serie MES](producto)
+    - [Máquina para ensayos de flexión rotativa](producto)
+    - [Serie MT](producto)
+    - [ME 406](producto)
+    - [Serie CH4](producto)
+    - [Serie CH9](producto)
+    - [ME 408](producto)
+    - [Enderezadora de barras](producto)
+    - [Marcadora de probetas](producto)
+    - [Mod MCR](producto)
+    - [PCD2K](producto)
+    - [TD2K](producto)
+    - [Células de carga](producto)
+    - [Mordazas para ensayos de tracción](producto)
+    - [Platos para ensayos de compresión](producto)
+    - [Dispositivos para ensayos de flexión](producto)
+    - [Soluciones en mezclas bituminosas](producto)
+    - [Extensometría](producto)
+    - [Equipos de control climático y térmico para ensayos de precisión](producto)
+    - Dime más sobre el [ME 402](producto)
+    - Estoy buscando información sobre el [ME 402](producto)
+    - Necesito detalles del [ME 402](producto)
+    - Cuéntame sobre el [ME 405](producto)
+    - ¿Qué me puedes decir del [ME 405](producto)?
+    - Quiero saber más del [ME 405](producto)
+    - Información sobre el [ME 403](producto)
+    - ¿Qué sabes sobre el [ME 403](producto)?
+    - Cuéntame sobre el [ME 403](producto)
+    - Más detalles del [ME 404](producto), por favor
+    - Quiero saber más del [ME 404](producto)
+    - ¿Qué características tiene el [ME 404](producto)?
+    - Dime más sobre el [MUF 401](producto)
+    - Estoy interesado en el [MUF 401](producto)
+    - Necesito saber más sobre el [MUF 401](producto)
+    - Cuéntame sobre el [MUF 404](producto)
+    - ¿Qué me puedes contar del [MUF 404](producto)?
+    - Información detallada sobre el [MUF 404](producto)
+    - Dime más sobre la [Serie MES](producto)
+    - Estoy buscando información sobre la [Serie MES](producto)
+    - Cuéntame más de la [Serie MES](producto)
+    - Quiero más detalles de la [Máquina para ensayos de flexión rotativa](producto)
+    - Información sobre la [Máquina para ensayos de flexión rotativa](producto), por favor
+    - Dime más sobre la [Máquina para ensayos de flexión rotativa](producto)
+    - Estoy interesado en la [Serie MT](producto)
+    - Cuéntame más sobre la [Serie MT](producto)
+    - Información sobre la [Serie MT](producto), por favor
+    - Necesito saber más del [ME 406](producto)
+    - Dime más detalles sobre el [ME 406](producto)
+    - Quiero saber más del [ME 406](producto)
+    - Más detalles sobre la [Serie CH4](producto), por favor
+    - Información detallada de la [Serie CH4](producto)
+    - Dime más de la [Serie CH4](producto)
+    - Estoy buscando información sobre la [Serie CH9](producto)
+    - Dime más sobre la [Serie CH9](producto)
+    - Cuéntame sobre la [Serie CH9](producto)
+    - ¿Qué me puedes decir del [ME 408](producto)?
+    - Quiero saber más sobre el [ME 408](producto)
+    - Información sobre el [ME 408](producto), por favor
+    - Estoy interesado en la [Enderezadora de barras](producto)
+    - Dime más sobre la [Enderezadora de barras](producto)
+    - ¿Qué sabes de la [Enderezadora de barras](producto)?
+    - Cuéntame sobre la [Marcadora de probetas](producto)
+    - Información sobre la [Marcadora de probetas](producto)
+    - Necesito saber más de la [Marcadora de probetas](producto)
+    - Dime más sobre el [Mod MCR](producto)
+    - Estoy interesado en el [Mod MCR](producto)
+    - Necesito más información sobre el [Mod MCR](producto)
+    - ¿Qué me puedes decir del [PCD2K](producto)?
+    - Cuéntame más sobre el [PCD2K](producto)
+    - Información sobre el [PCD2K](producto)
+    - Dime más del [TD2K](producto)
+    - Necesito saber más sobre el [TD2K](producto)
+    - Información sobre el [TD2K](producto)
+    - Estoy buscando información sobre las [Células de carga](producto)
+    - Cuéntame más sobre las [Células de carga](producto)
+    - ¿Qué me puedes decir sobre las [Células de carga](producto)?
+    - Necesito más información de las [Mordazas para ensayos de tracción](producto)
+    - Dime más detalles de las [Mordazas para ensayos de tracción](producto)
+    - Información sobre las [Mordazas para ensayos de tracción](producto), por favor
+    - Estoy buscando información sobre los [Platos para ensayos de compresión](producto)
+    - Cuéntame más de los [Platos para ensayos de compresión](producto)
+    - ¿Qué me puedes decir sobre los [Platos para ensayos de compresión](producto)?
+    - Dime más de los [Dispositivos para ensayos de flexión](producto)
+    - Estoy interesado en los [Dispositivos para ensayos de flexión](producto)
+    - Información sobre los [Dispositivos para ensayos de flexión](producto), por favor
+    - Cuéntame más sobre las [Soluciones en mezclas bituminosas](producto)
+    - Estoy buscando información de las [Soluciones en mezclas bituminosas](producto)
+    - Información sobre las [Soluciones en mezclas bituminosas](producto), por favor
+    - Dime más sobre la [Extensometría](producto)
+    - Necesito más información sobre la [Extensometría](producto)
+    - Cuéntame más detalles de la [Extensometría](producto)
+    - Dime más sobre los [Equipos de control climático y térmico para ensayos de precisión](producto)
+    - ¿Qué me puedes decir sobre los [Equipos de control climático y térmico para ensayos de precisión](producto)?
+    - Información de los [Equipos de control climático y térmico para ensayos de precisión](producto)
+
+
+
+- intent: ubicacion
+  examples: |
+    - ¿Dónde se encuentra ubicada Servosis?
+    - ¿Dónde está la empresa?
+    - ¿En qué parte de España se encuentra Servosis?
+    - Dime el sitio en el que se encuentra la empresa
+    - ¿Cuál es la dirección de Servosis?
+
