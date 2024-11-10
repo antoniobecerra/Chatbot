@@ -391,6 +391,7 @@ nlu:
     - Estoy interesado en el [MUF 401](producto)
     - Necesito saber más sobre el [MUF 401](producto)
     - Cuéntame sobre el [MUF 404](producto)
+    - Cuéntame sobre la serie [MUF 404](producto)
     - ¿Qué me puedes contar del [MUF 404](producto)?
     - Información detallada sobre el [MUF 404](producto)
     - Dime más sobre la [Serie MES](producto)
@@ -450,7 +451,22 @@ nlu:
     - Dime más sobre los [Equipos de control climático y térmico para ensayos de precisión](producto)
     - ¿Qué me puedes decir sobre los [Equipos de control climático y térmico para ensayos de precisión](producto)?
     - Información de los [Equipos de control climático y térmico para ensayos de precisión](producto)
+    
+    # Variaciones de "serie" para productos ME y MUF
+    - Cuéntame sobre la serie [ME 402](producto)
+    - Dime más sobre la serie [ME 405](producto)
+    - Información sobre la serie [ME 403](producto)
+    - ¿Qué me puedes decir sobre la serie [ME 404](producto)?
+    - Cuéntame sobre la serie [MUF 401](producto)
+    - Información detallada sobre la serie [MUF 404](producto)
 
+    # Variaciones de "modelo" para productos ME y MUF
+    - Cuéntame sobre el modelo [ME 402](producto)
+    - Dime más sobre el modelo [ME 405](producto)
+    - Información sobre el modelo [ME 403](producto)
+    - ¿Qué me puedes decir sobre el modelo [ME 404](producto)?
+    - Cuéntame sobre el modelo [MUF 401](producto)
+    - Información detallada sobre el modelo [MUF 404](producto)
 
 
 - intent: ubicacion
