@@ -100,7 +100,7 @@ class ActionMostrarVideo(FormValidationAction):
         if "marcadora manual" in slot_value.lower():
             video_url = "https://www.youtube.com/embed/BoIp-pjrsk4"
         elif any(keyword in slot_value.lower() for keyword in ["automatica", "automática"]):
-            video_url = "https://www.youtube.com/embed/5TEbhxk_Ll8&t=4s"
+            video_url = "https://youtu.be/5TEbhxk_Ll8"
         elif any(keyword in slot_value.lower() for keyword in ["maquina", "máquina"]) and (
             "corte" in slot_value.lower() or "recalcado" in slot_value.lower()
         ):
