@@ -6,3 +6,5 @@
 
 *.docx
 *.tmp
+
+**/informacion_adicional

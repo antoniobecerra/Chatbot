@@ -20,7 +20,7 @@ Debug console messages from javascript files have to be observed in the web or c
 # To install spacy:
 poetry add spacy@<3.8.2
 
-# Instalamos el modelo que utiliza:
+# To install the spacy model:
 python -m spacy download es_core_news_md
 
 
